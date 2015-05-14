@@ -1,0 +1,1044 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1619</width>
+    <height>779</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>11</y>
+      <width>151</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Origem da Imegm</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioBtnDsipP">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>131</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Dispositivo Padão</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="spinBoxNCam">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>40</y>
+       <width>47</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>0</number>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="spinBoxRaz">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>70</y>
+       <width>48</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="value">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_21">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>74</y>
+       <width>59</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Razão</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>10</y>
+      <width>951</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tabTh">
+     <attribute name="title">
+      <string>Thershould</string>
+     </attribute>
+     <widget class="QSlider" name="barrraHTH">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>10</y>
+        <width>701</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>255</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblsNivelTH">
+      <property name="geometry">
+       <rect>
+        <x>156</x>
+        <y>10</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioBtnOTSU">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Threshould OTSU</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioBtnTHSimp">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Threshouls Simple</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Op. de Borda</string>
+     </attribute>
+     <widget class="QRadioButton" name="radioBtnSobel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>99</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Sobel</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioBtnCanny">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Canny</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>10</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Limiar Superior:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>40</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Limiar Inferior:</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="barraCanSup">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>10</y>
+        <width>701</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <number>255</number>
+      </property>
+      <property name="pageStep">
+       <number>10</number>
+      </property>
+      <property name="value">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="barraCanInf">
+      <property name="geometry">
+       <rect>
+        <x>222</x>
+        <y>40</y>
+        <width>701</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <number>255</number>
+      </property>
+      <property name="value">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Dilatação,Erosão e Cor</string>
+     </attribute>
+     <widget class="QRadioButton" name="radioBtnDilate">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>99</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Dilatar</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioBtnErude">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>99</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Erodir</string>
+      </property>
+     </widget>
+     <widget class="QSplitter" name="splitter_3">
+      <property name="geometry">
+       <rect>
+        <x>589</x>
+        <y>4</y>
+        <width>351</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <widget class="QSlider" name="barraHHsup">
+       <property name="maximum">
+        <number>255</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="barraHSsup">
+       <property name="maximum">
+        <number>255</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="barraHVsup">
+       <property name="maximum">
+        <number>255</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>224</x>
+        <y>9</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>H:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>224</x>
+        <y>27</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>S:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>225</x>
+        <y>47</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>V</string>
+      </property>
+     </widget>
+     <widget class="QSplitter" name="splitter">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>20</y>
+        <width>121</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>Interações:</string>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="spinBoxInter"/>
+     </widget>
+     <widget class="QSplitter" name="splitter_2">
+      <property name="geometry">
+       <rect>
+        <x>249</x>
+        <y>3</y>
+        <width>320</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <widget class="QSlider" name="barraHHinf">
+       <property name="maximum">
+        <number>255</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="barraHSinf">
+       <property name="maximum">
+        <number>255</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="barraHVinf">
+       <property name="maximum">
+        <number>255</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Trasformada de Hough</string>
+     </attribute>
+     <widget class="QSplitter" name="splitter_4">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>10</y>
+        <width>171</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="label_9">
+       <property name="text">
+        <string>Resolução Rho:</string>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="SpinBoxDRho">
+       <property name="minimum">
+        <double>0.100000000000000</double>
+       </property>
+       <property name="singleStep">
+        <double>0.100000000000000</double>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QSplitter" name="splitter_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>170</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="label_10">
+       <property name="text">
+        <string>Resolução Theta:</string>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="SpinBoxDTheta">
+       <property name="minimum">
+        <double>0.100000000000000</double>
+       </property>
+       <property name="singleStep">
+        <double>0.100000000000000</double>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QSplitter" name="splitter_6">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>10</y>
+        <width>153</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="label_12">
+       <property name="text">
+        <string>Tamanho Minimo:</string>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="spinBoxTamReta">
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="value">
+        <number>50</number>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QSplitter" name="splitter_7">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>40</y>
+        <width>155</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="label_11">
+       <property name="text">
+        <string>Numero de Votos:</string>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="spinBoxNVotos">
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="value">
+        <number>50</number>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QSplitter" name="splitter_8">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>10</y>
+        <width>241</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="label_13">
+       <property name="text">
+        <string>Intervalo máximo entre pixles:</string>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="spinBoxGap">
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="value">
+        <number>50</number>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxCircH">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>40</y>
+        <width>85</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Circulos</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>Cantos de Harris</string>
+     </attribute>
+     <widget class="QSplitter" name="splitter_9">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>151</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="label_14">
+       <property name="text">
+        <string>Tamanho Janela:</string>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="spinBoxHarrisTJ">
+       <property name="minimum">
+        <number>2</number>
+       </property>
+       <property name="singleStep">
+        <number>1</number>
+       </property>
+       <property name="value">
+        <number>2</number>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QSplitter" name="splitter_10">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>151</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="label_15">
+       <property name="text">
+        <string>Abertura Sobel</string>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="spinBoxHarrisSobel">
+       <property name="minimum">
+        <number>3</number>
+       </property>
+       <property name="singleStep">
+        <number>2</number>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QSplitter" name="splitter_11">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>30</y>
+        <width>84</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="label_16">
+       <property name="text">
+        <string>K=</string>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="SpinBoxDHarrisk">
+       <property name="minimum">
+        <double>0.040000000000000</double>
+       </property>
+       <property name="singleStep">
+        <double>0.100000000000000</double>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QSlider" name="brrrasTHHarris">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>30</y>
+        <width>591</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>255</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>30</y>
+        <width>57</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Thershould</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_5">
+     <attribute name="title">
+      <string>Medidor de Similaridade</string>
+     </attribute>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>13</y>
+        <width>50</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Arquivo:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="edtTxtEndRef">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>10</y>
+        <width>451</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>/home/leandro/Imagens/refITA2.png</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioBtnCasPad">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>161</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Casamento de Padrão</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioBtnSURF">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>40</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SURF + FLANN</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_6">
+     <attribute name="title">
+      <string>Calibração</string>
+     </attribute>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>121</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tamanho Tabuleiro:</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spinBoxXtab">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>10</y>
+        <width>43</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>12</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>X</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spinBoxYTab">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>10</y>
+        <width>47</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>127</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Numero de Amostras:</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spinBoxNAm">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>40</y>
+        <width>47</width>
+        <height>24</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_8">
+     <attribute name="title">
+      <string>OpenGL</string>
+     </attribute>
+     <widget class="QPushButton" name="btnOpenGL">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>80</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Teste</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_7">
+     <attribute name="title">
+      <string>Testes</string>
+     </attribute>
+     <widget class="QPushButton" name="btIV_1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>121</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Testes Geral</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnAcharTab">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>80</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>AcharTab</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="edtEndImg">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>40</y>
+        <width>271</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>/home/leandro/Academico/POS-G/ITA/Tese_AGE/testetabl1802.tiff</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxEndImg">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>40</y>
+        <width>85</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Usar Img</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnSisLi">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>10</y>
+        <width>80</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Resolve Sis</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="btnIniciar">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>40</y>
+      <width>80</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Iniciar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnParar">
+    <property name="geometry">
+     <rect>
+      <x>1220</x>
+      <y>40</y>
+      <width>80</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Parar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblIMG">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>120</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Aguardando imagem....</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblIMGOrg">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>120</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Aguardando imagem....</string>
+    </property>
+   </widget>
+   <widget class="OpenGLp" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1370</x>
+      <y>0</y>
+      <width>241</width>
+      <height>271</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1619</width>
+     <height>19</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>OpenGLp</class>
+   <extends>QWidget</extends>
+   <header>openglp.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
